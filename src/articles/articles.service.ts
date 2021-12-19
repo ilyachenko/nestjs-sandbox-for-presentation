@@ -9,7 +9,7 @@ export class ArticlesService {
   }
 
   findAll() {
-    return `This action returns all articles`;
+    return [{ time: new Date().toString() }];
   }
 
   findOne(id: number) {

@@ -7,6 +7,11 @@
 
 /* tslint:disable */
 /* eslint-disable */
+export enum CacheControlScope {
+    PUBLIC = "PUBLIC",
+    PRIVATE = "PRIVATE"
+}
+
 export interface CreateArticleInput {
     exampleField?: Nullable<number>;
 }
@@ -17,6 +22,7 @@ export interface UpdateArticleInput {
 
 export interface Article {
     exampleField?: Nullable<number>;
+    time?: Nullable<string>;
 }
 
 export interface IQuery {
