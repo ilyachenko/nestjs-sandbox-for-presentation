@@ -3,11 +3,7 @@ import { ModuleBService } from '../module-b/module-b.service';
 
 @Injectable()
 export class ModuleAService {
-  private moduleBService: ModuleBService;
-
-  constructor(moduleBService: ModuleBService) {
-    this.moduleBService = moduleBService;
-  }
+  constructor(private moduleBService: ModuleBService) {}
 
   getName() {
     this.moduleBService.call();
